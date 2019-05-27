@@ -1,0 +1,251 @@
+D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\obj\x86\Debug\CQC.csprojResolveAssemblyReference.cache
+D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\CQC.exe
+D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\CQC.pdb
+D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Microsoft.Xna.Framework.dll
+D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Microsoft.Xna.Framework.Game.dll
+D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Microsoft.Xna.Framework.GamerServices.dll
+D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Microsoft.Xna.Framework.Graphics.dll
+D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Microsoft.Xna.Framework.Input.Touch.dll
+D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Microsoft.Xna.Framework.xml
+D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Microsoft.Xna.Framework.Game.xml
+D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Microsoft.Xna.Framework.Graphics.xml
+D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Microsoft.Xna.Framework.GamerServices.xml
+D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Microsoft.Xna.Framework.Input.Touch.xml
+D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\obj\x86\Debug\CQC.exe
+D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\obj\x86\Debug\CQC.pdb
+D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Content\Models\Ground.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Content\Models\test.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Content\Models\Checker_0.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Content\Models\Box-textur_0.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Content\Effects\LightingEffect.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Content\Effects\SimpleEffect.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Content\Models\skysphere_mesh.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Content\Effects\skysphere_effect.xnb
+E:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Content\Models\Ground.xnb
+E:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Content\Models\test.xnb
+E:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Content\Models\skysphere_mesh.xnb
+E:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Content\Effects\LightingEffect.xnb
+E:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Content\Effects\SimpleEffect.xnb
+E:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Content\Effects\skysphere_effect.xnb
+E:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Content\Models\clouds.xnb
+E:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Content\Models\Checker_0.xnb
+E:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Content\Models\Box-textur_0.xnb
+E:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\CQC.exe
+E:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\CQC.pdb
+E:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Microsoft.Xna.Framework.dll
+E:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Microsoft.Xna.Framework.Game.dll
+E:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Microsoft.Xna.Framework.GamerServices.dll
+E:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Microsoft.Xna.Framework.Graphics.dll
+E:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Microsoft.Xna.Framework.Input.Touch.dll
+E:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Microsoft.Xna.Framework.xml
+E:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Microsoft.Xna.Framework.Game.xml
+E:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Microsoft.Xna.Framework.Graphics.xml
+E:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Microsoft.Xna.Framework.GamerServices.xml
+E:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Microsoft.Xna.Framework.Input.Touch.xml
+E:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\obj\x86\Debug\CQC.csprojResolveAssemblyReference.cache
+E:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+E:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\obj\x86\Debug\CQC.exe
+E:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\obj\x86\Debug\CQC.pdb
+D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Content\Models\Ship.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Content\Models\bullet.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Content\Models\asteroid.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Content\Sounds\Explosion.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Content\Sounds\Hit.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Content\Sounds\Shoot.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Content\Sounds\ShieldHit.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Content\Fonts\digitaldream.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Content\Models\shipTexture_0.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Content\Models\AsteroidTexture_0.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Content\Textures\logo.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Content\Models\bulletTexture_0.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Content\Models\clouds.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Content\Models\Cockpit.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Content\Models\cockpitTexture_0.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Content\Textures\crosshair.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Content\Textures\crosshair2.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Content\Textures\Scoreboard.xnb
+C:\Users\Olle\Desktop\CQC\CQC\CQC\obj\x86\Debug\CQC.csprojResolveAssemblyReference.cache
+C:\Users\Olle\Desktop\CQC\CQC\CQC\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Olle\Desktop\CQC\CQC\CQC\obj\x86\Debug\CQC.exe
+C:\Users\Olle\Desktop\CQC\CQC\CQC\obj\x86\Debug\CQC.pdb
+C:\Users\Olle\Desktop\CQC\CQC\CQC\bin\x86\Debug\Content\Models\clouds.xnb
+C:\Users\Olle\Desktop\CQC\CQC\CQC\bin\x86\Debug\Content\Textures\crosshair.xnb
+C:\Users\Olle\Desktop\CQC\CQC\CQC\bin\x86\Debug\Content\Textures\crosshair2.xnb
+C:\Users\Olle\Desktop\CQC\CQC\CQC\bin\x86\Debug\Content\Textures\logo.xnb
+C:\Users\Olle\Desktop\CQC\CQC\CQC\bin\x86\Debug\Content\Fonts\digitaldream.xnb
+C:\Users\Olle\Desktop\CQC\CQC\CQC\bin\x86\Debug\Content\Textures\Scoreboard.xnb
+C:\Users\Olle\Desktop\CQC\CQC\CQC\bin\x86\Debug\Content\Models\Ground.xnb
+C:\Users\Olle\Desktop\CQC\CQC\CQC\bin\x86\Debug\Content\Models\test.xnb
+C:\Users\Olle\Desktop\CQC\CQC\CQC\bin\x86\Debug\Content\Models\skysphere_mesh.xnb
+C:\Users\Olle\Desktop\CQC\CQC\CQC\bin\x86\Debug\Content\Models\bullet.xnb
+C:\Users\Olle\Desktop\CQC\CQC\CQC\bin\x86\Debug\Content\Models\asteroid.xnb
+C:\Users\Olle\Desktop\CQC\CQC\CQC\bin\x86\Debug\Content\Models\Ship.xnb
+C:\Users\Olle\Desktop\CQC\CQC\CQC\bin\x86\Debug\Content\Models\Cockpit.xnb
+C:\Users\Olle\Desktop\CQC\CQC\CQC\bin\x86\Debug\Content\Effects\LightingEffect.xnb
+C:\Users\Olle\Desktop\CQC\CQC\CQC\bin\x86\Debug\Content\Effects\SimpleEffect.xnb
+C:\Users\Olle\Desktop\CQC\CQC\CQC\bin\x86\Debug\Content\Effects\skysphere_effect.xnb
+C:\Users\Olle\Desktop\CQC\CQC\CQC\bin\x86\Debug\Content\Sounds\Explosion.xnb
+C:\Users\Olle\Desktop\CQC\CQC\CQC\bin\x86\Debug\Content\Sounds\Hit.xnb
+C:\Users\Olle\Desktop\CQC\CQC\CQC\bin\x86\Debug\Content\Sounds\Shoot.xnb
+C:\Users\Olle\Desktop\CQC\CQC\CQC\bin\x86\Debug\Content\Sounds\ShieldHit.xnb
+C:\Users\Olle\Desktop\CQC\CQC\CQC\bin\x86\Debug\Content\Models\Checker_0.xnb
+C:\Users\Olle\Desktop\CQC\CQC\CQC\bin\x86\Debug\Content\Models\Box-textur_0.xnb
+C:\Users\Olle\Desktop\CQC\CQC\CQC\bin\x86\Debug\Content\Models\bulletTexture_0.xnb
+C:\Users\Olle\Desktop\CQC\CQC\CQC\bin\x86\Debug\Content\Models\AsteroidTexture_0.xnb
+C:\Users\Olle\Desktop\CQC\CQC\CQC\bin\x86\Debug\Content\Models\shipTexture_0.xnb
+C:\Users\Olle\Desktop\CQC\CQC\CQC\bin\x86\Debug\Content\Models\cockpitTexture_0.xnb
+C:\Users\Olle\Desktop\CQC\CQC\CQC\bin\x86\Debug\CQC.exe
+C:\Users\Olle\Desktop\CQC\CQC\CQC\bin\x86\Debug\CQC.pdb
+C:\Users\Olle\Desktop\CQC\CQC\CQC\bin\x86\Debug\Microsoft.Xna.Framework.dll
+C:\Users\Olle\Desktop\CQC\CQC\CQC\bin\x86\Debug\Microsoft.Xna.Framework.Game.dll
+C:\Users\Olle\Desktop\CQC\CQC\CQC\bin\x86\Debug\Microsoft.Xna.Framework.GamerServices.dll
+C:\Users\Olle\Desktop\CQC\CQC\CQC\bin\x86\Debug\Microsoft.Xna.Framework.Graphics.dll
+C:\Users\Olle\Desktop\CQC\CQC\CQC\bin\x86\Debug\Microsoft.Xna.Framework.Input.Touch.dll
+C:\Users\Olle\Desktop\CQC\CQC\CQC\bin\x86\Debug\Microsoft.Xna.Framework.xml
+C:\Users\Olle\Desktop\CQC\CQC\CQC\bin\x86\Debug\Microsoft.Xna.Framework.Game.xml
+C:\Users\Olle\Desktop\CQC\CQC\CQC\bin\x86\Debug\Microsoft.Xna.Framework.Graphics.xml
+C:\Users\Olle\Desktop\CQC\CQC\CQC\bin\x86\Debug\Microsoft.Xna.Framework.GamerServices.xml
+C:\Users\Olle\Desktop\CQC\CQC\CQC\bin\x86\Debug\Microsoft.Xna.Framework.Input.Touch.xml
+D:\LBS\Årskurs 2\PRRPRR\CQC New\CQC\CQC\obj\x86\Debug\CQC.csprojResolveAssemblyReference.cache
+D:\LBS\Årskurs 2\PRRPRR\CQC New\CQC\CQC\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+D:\LBS\Årskurs 2\PRRPRR\CQC New\CQC\CQC\obj\x86\Debug\CQC.exe
+D:\LBS\Årskurs 2\PRRPRR\CQC New\CQC\CQC\obj\x86\Debug\CQC.pdb
+D:\LBS\Årskurs 2\PRRPRR\CQC New\CQC\CQC\bin\x86\Debug\Content\Models\clouds.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC New\CQC\CQC\bin\x86\Debug\Content\Textures\crosshair.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC New\CQC\CQC\bin\x86\Debug\Content\Textures\crosshair2.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC New\CQC\CQC\bin\x86\Debug\Content\Textures\logo.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC New\CQC\CQC\bin\x86\Debug\Content\Fonts\digitaldream.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC New\CQC\CQC\bin\x86\Debug\Content\Textures\Scoreboard.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC New\CQC\CQC\bin\x86\Debug\Content\Models\Ground.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC New\CQC\CQC\bin\x86\Debug\Content\Models\test.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC New\CQC\CQC\bin\x86\Debug\Content\Models\skysphere_mesh.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC New\CQC\CQC\bin\x86\Debug\Content\Models\bullet.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC New\CQC\CQC\bin\x86\Debug\Content\Models\asteroid.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC New\CQC\CQC\bin\x86\Debug\Content\Models\Ship.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC New\CQC\CQC\bin\x86\Debug\Content\Models\Cockpit.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC New\CQC\CQC\bin\x86\Debug\Content\Effects\LightingEffect.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC New\CQC\CQC\bin\x86\Debug\Content\Effects\SimpleEffect.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC New\CQC\CQC\bin\x86\Debug\Content\Effects\skysphere_effect.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC New\CQC\CQC\bin\x86\Debug\Content\Sounds\Explosion.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC New\CQC\CQC\bin\x86\Debug\Content\Sounds\Hit.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC New\CQC\CQC\bin\x86\Debug\Content\Sounds\Shoot.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC New\CQC\CQC\bin\x86\Debug\Content\Sounds\ShieldHit.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC New\CQC\CQC\bin\x86\Debug\Content\Models\Checker_0.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC New\CQC\CQC\bin\x86\Debug\Content\Models\Box-textur_0.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC New\CQC\CQC\bin\x86\Debug\Content\Models\bulletTexture_0.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC New\CQC\CQC\bin\x86\Debug\Content\Models\AsteroidTexture_0.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC New\CQC\CQC\bin\x86\Debug\Content\Models\shipTexture_0.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC New\CQC\CQC\bin\x86\Debug\Content\Models\cockpitTexture_0.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC New\CQC\CQC\bin\x86\Debug\CQC.exe
+D:\LBS\Årskurs 2\PRRPRR\CQC New\CQC\CQC\bin\x86\Debug\CQC.pdb
+D:\LBS\Årskurs 2\PRRPRR\CQC New\CQC\CQC\bin\x86\Debug\Microsoft.Xna.Framework.dll
+D:\LBS\Årskurs 2\PRRPRR\CQC New\CQC\CQC\bin\x86\Debug\Microsoft.Xna.Framework.Game.dll
+D:\LBS\Årskurs 2\PRRPRR\CQC New\CQC\CQC\bin\x86\Debug\Microsoft.Xna.Framework.GamerServices.dll
+D:\LBS\Årskurs 2\PRRPRR\CQC New\CQC\CQC\bin\x86\Debug\Microsoft.Xna.Framework.Graphics.dll
+D:\LBS\Årskurs 2\PRRPRR\CQC New\CQC\CQC\bin\x86\Debug\Microsoft.Xna.Framework.Input.Touch.dll
+D:\LBS\Årskurs 2\PRRPRR\CQC New\CQC\CQC\bin\x86\Debug\Microsoft.Xna.Framework.xml
+D:\LBS\Årskurs 2\PRRPRR\CQC New\CQC\CQC\bin\x86\Debug\Microsoft.Xna.Framework.Game.xml
+D:\LBS\Årskurs 2\PRRPRR\CQC New\CQC\CQC\bin\x86\Debug\Microsoft.Xna.Framework.Graphics.xml
+D:\LBS\Årskurs 2\PRRPRR\CQC New\CQC\CQC\bin\x86\Debug\Microsoft.Xna.Framework.GamerServices.xml
+D:\LBS\Årskurs 2\PRRPRR\CQC New\CQC\CQC\bin\x86\Debug\Microsoft.Xna.Framework.Input.Touch.xml
+D:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Models\clouds.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Textures\crosshair.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Textures\crosshair2.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Textures\logo.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Fonts\digitaldream.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Textures\Scoreboard.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Models\Ground.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Models\test.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Models\skysphere_mesh.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Models\bullet.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Models\asteroid.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Models\Ship.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Models\Cockpit.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Effects\LightingEffect.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Effects\SimpleEffect.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Effects\skysphere_effect.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Sounds\Explosion.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Sounds\Hit.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Sounds\Shoot.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Sounds\ShieldHit.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Models\Checker_0.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Models\Box-textur_0.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Models\bulletTexture_0.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Models\AsteroidTexture_0.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Models\shipTexture_0.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Models\cockpitTexture_0.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\CQC.exe
+D:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\CQC.pdb
+D:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Microsoft.Xna.Framework.dll
+D:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Microsoft.Xna.Framework.Game.dll
+D:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Microsoft.Xna.Framework.GamerServices.dll
+D:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Microsoft.Xna.Framework.Graphics.dll
+D:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Microsoft.Xna.Framework.Input.Touch.dll
+D:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Microsoft.Xna.Framework.xml
+D:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Microsoft.Xna.Framework.Game.xml
+D:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Microsoft.Xna.Framework.Graphics.xml
+D:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Microsoft.Xna.Framework.GamerServices.xml
+D:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Microsoft.Xna.Framework.Input.Touch.xml
+D:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\obj\x86\Debug\CQC.csprojResolveAssemblyReference.cache
+D:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+D:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\obj\x86\Debug\CQC.exe
+D:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\obj\x86\Debug\CQC.pdb
+D:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Textures\controls.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Sounds\shieldsoffline1.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Sounds\shieldsoffline2.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Sounds\shieldsonline1.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Sounds\shieldsonline2.xnb
+E:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Models\clouds.xnb
+E:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Textures\crosshair.xnb
+E:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Textures\crosshair2.xnb
+E:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Textures\logo.xnb
+E:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Fonts\digitaldream.xnb
+E:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Textures\Scoreboard.xnb
+E:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Textures\controls.xnb
+E:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Models\Ground.xnb
+E:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Models\test.xnb
+E:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Models\skysphere_mesh.xnb
+E:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Models\bullet.xnb
+E:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Models\asteroid.xnb
+E:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Models\Ship.xnb
+E:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Models\Cockpit.xnb
+E:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Effects\LightingEffect.xnb
+E:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Effects\SimpleEffect.xnb
+E:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Effects\skysphere_effect.xnb
+E:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Sounds\Explosion.xnb
+E:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Sounds\Hit.xnb
+E:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Sounds\Shoot.xnb
+E:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Sounds\ShieldHit.xnb
+E:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Sounds\shieldsoffline1.xnb
+E:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Sounds\shieldsoffline2.xnb
+E:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Sounds\shieldsonline1.xnb
+E:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Sounds\shieldsonline2.xnb
+E:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Models\Checker_0.xnb
+E:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Models\Box-textur_0.xnb
+E:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Models\bulletTexture_0.xnb
+E:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Models\AsteroidTexture_0.xnb
+E:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Models\shipTexture_0.xnb
+E:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Models\cockpitTexture_0.xnb
+E:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\CQC.exe
+E:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\CQC.pdb
+E:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Microsoft.Xna.Framework.dll
+E:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Microsoft.Xna.Framework.Game.dll
+E:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Microsoft.Xna.Framework.GamerServices.dll
+E:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Microsoft.Xna.Framework.Graphics.dll
+E:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Microsoft.Xna.Framework.Input.Touch.dll
+E:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Microsoft.Xna.Framework.xml
+E:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Microsoft.Xna.Framework.Game.xml
+E:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Microsoft.Xna.Framework.Graphics.xml
+E:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Microsoft.Xna.Framework.GamerServices.xml
+E:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Microsoft.Xna.Framework.Input.Touch.xml
+E:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\obj\x86\Debug\CQC.csprojResolveAssemblyReference.cache
+E:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+E:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\obj\x86\Debug\CQC.exe
+E:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\obj\x86\Debug\CQC.pdb
+D:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Textures\marker.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Textures\transparentBlack.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Fonts\digitaldream2.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Fonts\digitaldream3.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Textures\centerMarker1.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Textures\centerMarker2.xnb
