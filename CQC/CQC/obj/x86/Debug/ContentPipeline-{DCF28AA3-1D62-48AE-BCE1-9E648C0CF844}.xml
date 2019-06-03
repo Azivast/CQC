@@ -128,7 +128,7 @@
       <Time>2019-03-20T12:19:48+01:00</Time>
       <Dependency>
         <Key>D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\obj\x86\Debug\Models\Ground_0.xml</Key>
-        <Value>2019-06-03T15:43:16+02:00</Value>
+        <Value>2019-06-03T15:51:46+02:00</Value>
       </Dependency>
       <Request>D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Content\Models\Checker_0.xnb</Request>
     </Item>
@@ -142,7 +142,7 @@
       <Time>2019-03-20T12:19:48+01:00</Time>
       <Dependency>
         <Key>D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\obj\x86\Debug\Models\test_0.xml</Key>
-        <Value>2019-06-03T15:43:16+02:00</Value>
+        <Value>2019-06-03T15:51:46+02:00</Value>
       </Dependency>
       <Request>D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Content\Models\Box-textur_0.xnb</Request>
     </Item>
@@ -156,7 +156,7 @@
       <Time>2019-03-27T10:51:10+01:00</Time>
       <Dependency>
         <Key>D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\obj\x86\Debug\Models\skysphere_mesh_0.xml</Key>
-        <Value>2019-06-03T15:43:16+02:00</Value>
+        <Value>2019-06-03T15:51:46+02:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -169,7 +169,7 @@
       <Time>2019-05-03T22:48:20+02:00</Time>
       <Dependency>
         <Key>D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\obj\x86\Debug\Models\bullet_0.xml</Key>
-        <Value>2019-06-03T15:43:16+02:00</Value>
+        <Value>2019-06-03T15:51:46+02:00</Value>
       </Dependency>
       <Request>D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Content\Models\bulletTexture_0.xnb</Request>
     </Item>
@@ -183,7 +183,7 @@
       <Time>2019-04-28T21:29:18+02:00</Time>
       <Dependency>
         <Key>D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\obj\x86\Debug\Models\asteroid_0.xml</Key>
-        <Value>2019-06-03T15:43:18+02:00</Value>
+        <Value>2019-06-03T15:51:50+02:00</Value>
       </Dependency>
       <Request>D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Content\Models\AsteroidTexture_0.xnb</Request>
     </Item>
@@ -197,7 +197,7 @@
       <Time>2019-05-27T22:45:24+02:00</Time>
       <Dependency>
         <Key>D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\obj\x86\Debug\Models\Ship_0.xml</Key>
-        <Value>2019-06-03T15:43:20+02:00</Value>
+        <Value>2019-06-03T15:51:52+02:00</Value>
       </Dependency>
       <Request>D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Content\Models\shipTexture_0.xnb</Request>
     </Item>
@@ -211,7 +211,7 @@
       <Time>2019-05-01T18:57:20+02:00</Time>
       <Dependency>
         <Key>D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\obj\x86\Debug\Models\Cockpit_0.xml</Key>
-        <Value>2019-06-03T15:43:24+02:00</Value>
+        <Value>2019-06-03T15:51:54+02:00</Value>
       </Dependency>
       <Request>D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Content\Models\cockpitTexture_0.xnb</Request>
     </Item>

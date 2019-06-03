@@ -35,7 +35,7 @@ namespace CQC
             ship.Material = Game1.ShipMaterial;
 
             // Load camera
-            camera = new ArcBallCamera(ship.Position + new Vector3(0, 0, 100), 0, 0.2f, 0, MathHelper.PiOver2, 4000, 1000, 4000, graphics, 16 / 9f);
+            camera = new ArcBallCamera(ship.Position, 0, 0.2f, 0, MathHelper.PiOver2, 4000, 1000, 4000, graphics, 16 / 9f);
 
             // Load font
             menuFont = Content.Load<SpriteFont>("Fonts/digitaldream2");
