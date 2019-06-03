@@ -45,13 +45,13 @@ namespace CQC
             SoundEffect.MasterVolume = 0.5f;
         }
 
-	// Run to turn sound on/off
+        // Run to turn sound on/off
         public static void ToggleSound()
-        {	
-	    // If sound is on set volume to 0
+        {
+            // If sound is on set volume to 0
             if (SoundEffect.MasterVolume == 0.5f)
                 SoundEffect.MasterVolume = 0;
-	    // If sound is off turn volume back on
+            // If sound is off turn volume back on
             else
                 SoundEffect.MasterVolume = 0.5f;
         }

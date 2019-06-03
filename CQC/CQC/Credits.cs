@@ -12,17 +12,18 @@ using Microsoft.Xna.Framework.Media;
 
 namespace CQC
 {
+    // Class handeling everything used in credits
     static class Credits
     {
+        // Variables. Uncommented ones have self-documenting names
         private static Camera camera;
-
         private static SpriteFont menuFont;
         private static Texture2D logo;
-        private static Texture2D scoreboard;
+        // Background
         private static Texture2D bg;
-
         private static ButtonManager buttonManager;
 
+        // Load content used by credits menu
         public static void LoadContent(ContentManager Content, GraphicsDevice graphics)
         {
             // Load camera
@@ -30,15 +31,18 @@ namespace CQC
 
             // Load font
             menuFont = Content.Load<SpriteFont>("Fonts/digitaldream2");
+            // Load logo
             logo = Content.Load<Texture2D>("Textures/logo");
-            scoreboard = Content.Load<Texture2D>("Textures/Scoreboard");
+            // Load background texture
             bg = Content.Load<Texture2D>("Textures/transparentBlack");
             
             // Set up buttonManager
             buttonManager = new ButtonManager(new Vector2(640, 660), menuFont);
-            // Add buttons
+            // Add button
             buttonManager.AddButton("press A to return to main menu");
         }
+
+        // Update
         public static void Update()
         {
             // Rotate camera
@@ -49,26 +53,30 @@ namespace CQC
             camera.Update();
 
 
-            // Check controller input 1
+            // Return to main menu if controller 1 presses A
             if (InputManager.IsTapped(Buttons.A, PlayerIndex.One))
             {
                 Game1.gameState = Game1.GameState.MainMenu;
             }
 
 
-            // Check controller input 2
+            // Return to main menu if controller 2 presses A
             if (InputManager.IsTapped(Buttons.A, PlayerIndex.Two))
             {
                 Game1.gameState = Game1.GameState.MainMenu;
             }
         }
+         
+        // Draw
         public static void Draw(PlayerShip player1, PlayerShip player2, SkyBox skyBox, SpriteBatch spriteBatch)
         {
             // Draw skybox
             skyBox.Draw(camera.View, camera.Projection, ((ArcBallCamera)camera).Position);
 
 
+
             // Draw menu items
+
             spriteBatch.Begin();
 
             // Draw transparent background
@@ -77,7 +85,7 @@ namespace CQC
             // Draw logo
             spriteBatch.Draw(logo, new Rectangle(483, 20, logo.Width, logo.Height), Color.White);
 
-            // Credits
+            // Draw the actual credits
             spriteBatch.DrawString(menuFont, "Made by:", new Vector2(580, 320), new Color(224, 96, 26));
             // "}" Replaced with "É" in font texture
             spriteBatch.DrawString(menuFont, "Olle Astr}", new Vector2(560, 350), new Color(224, 96, 26));

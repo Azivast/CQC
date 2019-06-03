@@ -6,6 +6,11 @@ Content\Fonts\digitaldream.xnb
 Content\Textures\Scoreboard.xnb
 Content\Textures\controls.xnb
 Content\Textures\marker.xnb
+Content\Textures\transparentBlack.xnb
+Content\Fonts\digitaldream2.xnb
+Content\Fonts\digitaldream3.xnb
+Content\Textures\centerMarker1.xnb
+Content\Textures\centerMarker2.xnb
 Content\Models\Ground.xnb
 Content\Models\test.xnb
 Content\Models\skysphere_mesh.xnb
@@ -30,8 +35,3 @@ Content\Models\bulletTexture_0.xnb
 Content\Models\AsteroidTexture_0.xnb
 Content\Models\shipTexture_0.xnb
 Content\Models\cockpitTexture_0.xnb
-Content\Textures\transparentBlack.xnb
-Content\Fonts\digitaldream2.xnb
-Content\Fonts\digitaldream3.xnb
-Content\Textures\centerMarker1.xnb
-Content\Textures\centerMarker2.xnb

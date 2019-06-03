@@ -12,20 +12,20 @@ using Microsoft.Xna.Framework.Media;
 
 namespace CQC
 {	
-    // Class handeling everything used by tutorial
+    // Class handeling everything used in tutorial
     static class Tutorial
     {
-	// Self documenting variables used by class	
-
+	    // Variables. Uncommented ones have self-documenting names
         private static Camera camera;
         private static SpriteFont menuFont;
-	// Textures
+	    // Controller texture
         private static Texture2D controller;
+        // Backgroun texture
         private static Texture2D bg;
-
         private static ButtonManager buttonManager;
 
-	// Load content used by tutorial menu
+
+	    // Load content used by tutorial menu
         public static void LoadContent(ContentManager Content, GraphicsDevice graphics)
         {
             // Load camera
@@ -36,7 +36,7 @@ namespace CQC
 
             // Load image of controller
             controller = Content.Load<Texture2D>("Textures/controls");
-	    // Load transparent background texture
+	        // Load transparent background texture
             bg = Content.Load<Texture2D>("Textures/transparentBlack");
 
             // Set up buttonManager
@@ -44,8 +44,8 @@ namespace CQC
             // Add button
             buttonManager.AddButton("press A to return to main menu");
         }
-
-	// Update
+    
+	    // Update
         public static void Update()
         {
             // Rotate camera
@@ -70,7 +70,7 @@ namespace CQC
             }
         }
 
-	// Draw
+	    // Draw
         public static void Draw(PlayerShip player1, PlayerShip player2, SkyBox skyBox, SpriteBatch spriteBatch)
         {
             // Draw skybox
@@ -86,7 +86,7 @@ namespace CQC
             // Draw controller texture
             spriteBatch.Draw(controller, new Rectangle(344, 50, controller.Width, controller.Height), Color.White);
 
-	    // Draw text explaining the game player
+	        // Draw text explaining the game play
             spriteBatch.DrawString(menuFont, "Watch your shields and don't let your hull reach 0%", new Vector2(260, 450), new Color(224, 96, 26));
 
             spriteBatch.DrawString(menuFont, "Avoid collisions", new Vector2(510, 490), new Color(224, 96, 26));

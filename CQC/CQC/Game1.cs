@@ -16,7 +16,7 @@ namespace CQC
     /// </summary>
     public class Game1 : Microsoft.Xna.Framework.Game
     {
-	// Variables. Uncommented ones have self documenting names
+        // Variables. Uncommented ones have self documenting names
 
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
@@ -60,8 +60,8 @@ namespace CQC
 
         SkyBox skyBox;
         AsteroidField asteroidField;
-	
-	// Font used by ship HUD. Accessible from all classes
+
+        // Font used by ship HUD. Accessible from all classes
         public static SpriteFont HudFont;
 
         public Game1()
@@ -82,7 +82,7 @@ namespace CQC
 
             base.Initialize();
 
-	    // Set game resolution
+            // Set game resolution
             graphics.PreferredBackBufferWidth = 1270;
             graphics.PreferredBackBufferHeight = 720;
             graphics.ApplyChanges();
@@ -109,9 +109,9 @@ namespace CQC
                 DepthFormat.Depth24, 0, RenderTargetUsage.PreserveContents
                 );
             RenderTargetBottom = new RenderTarget2D(
-                GraphicsDevice, 
-                960, 
-                1080, 
+                GraphicsDevice,
+                960,
+                1080,
                 false,
                 GraphicsDevice.PresentationParameters.BackBufferFormat,
                 DepthFormat.Depth24, 0, RenderTargetUsage.PreserveContents
@@ -144,7 +144,7 @@ namespace CQC
             CustomModel ship1 = new CustomModel(Content.Load<Model>("Models/Ship"), Vector3.Zero, Vector3.Zero, new Vector3(1f), Vector3.Zero, Vector3.Zero, GraphicsDevice);
             CustomModel ship2 = new CustomModel(Content.Load<Model>("Models/Ship"), Vector3.Zero, Vector3.Zero, new Vector3(1f), Vector3.Zero, Vector3.Zero, GraphicsDevice);
             // Load cockpit models for both players
-	    CustomModel cockpit1 = new CustomModel(Content.Load<Model>("Models/Cockpit"), Vector3.Zero, Vector3.Zero, new Vector3(1f), Vector3.Zero, Vector3.Zero, GraphicsDevice);
+            CustomModel cockpit1 = new CustomModel(Content.Load<Model>("Models/Cockpit"), Vector3.Zero, Vector3.Zero, new Vector3(1f), Vector3.Zero, Vector3.Zero, GraphicsDevice);
             CustomModel cockpit2 = new CustomModel(Content.Load<Model>("Models/Cockpit"), Vector3.Zero, Vector3.Zero, new Vector3(1f), Vector3.Zero, Vector3.Zero, GraphicsDevice);
 
             // Set models' effect
@@ -159,22 +159,22 @@ namespace CQC
             player1bulletManager = new BulletManager(Content.Load<Model>("Models/bullet"), 3000);
             player2bulletManager = new BulletManager(Content.Load<Model>("Models/bullet"), 3000);
             // Create player ships and assign controllers
-            player1Ship = new PlayerShip(ship1, cockpit1, player1bulletManager, Content.Load<Texture2D>("Textures/crosshair"), Content.Load<Texture2D>("Textures/marker"), Content.Load<Texture2D>("Textures/centerMarker1"), Content.Load<Texture2D>("Textures/centerMarker1") ,new Vector3(0, 0, -150), new Vector3(0, 0, 0), PlayerIndex.One);
+            player1Ship = new PlayerShip(ship1, cockpit1, player1bulletManager, Content.Load<Texture2D>("Textures/crosshair"), Content.Load<Texture2D>("Textures/marker"), Content.Load<Texture2D>("Textures/centerMarker1"), Content.Load<Texture2D>("Textures/centerMarker1"), new Vector3(0, 0, -150), new Vector3(0, 0, 0), PlayerIndex.One);
             player2Ship = new PlayerShip(ship2, cockpit2, player2bulletManager, Content.Load<Texture2D>("Textures/crosshair"), Content.Load<Texture2D>("Textures/marker"), Content.Load<Texture2D>("Textures/centerMarker1"), Content.Load<Texture2D>("Textures/centerMarker1"), new Vector3(0, 30, 150), new Vector3(0, MathHelper.Pi, 0), PlayerIndex.Two);
             // Player's cameras
-            cameraPlayer1 = new CockpitCamera(new Vector3(0, 3.1f, -10), new Vector3(0, 3, 0), Vector3.Zero, GraphicsDevice, 8/9f);
-            cameraPlayer2 = new CockpitCamera(new Vector3(0, 3, -10), new Vector3(0, 3, 0), Vector3.Zero, GraphicsDevice, 8/9f);
+            cameraPlayer1 = new CockpitCamera(new Vector3(0, 3.1f, -10), new Vector3(0, 3, 0), Vector3.Zero, GraphicsDevice, 8 / 9f);
+            cameraPlayer2 = new CockpitCamera(new Vector3(0, 3, -10), new Vector3(0, 3, 0), Vector3.Zero, GraphicsDevice, 8 / 9f);
 
-	    // Load asteroid field
+            // Load asteroid field
             asteroidField = new AsteroidField(Content.Load<Model>("Models/asteroid"), 10);
 
             // CollisionsManager
             collisionsManager = new CollisionsManager(player1Ship, player2Ship, asteroidField);
 
-	    // Load font used for HUD
+            // Load font used for HUD
             HudFont = Content.Load<SpriteFont>("Fonts/digitaldream");
 
-	    // Get mouseState to prevent potential error with variable beeing null
+            // Get mouseState to prevent potential error with variable beeing null
             lastMouseState = Mouse.GetState();
 
             // Load sounds
@@ -193,16 +193,16 @@ namespace CQC
             // TODO: Unload any non ContentManager content here
         }
 
-	// Update camera for player1
+        // Update camera for player1
         void updateCameraPlayer1(GameTime gameTime)
         {
             //Move the camera
-           ((CockpitCamera)cameraPlayer1).Move(player1Ship.Model.Position, player1Ship.Model.Rotation);
+            ((CockpitCamera)cameraPlayer1).Move(player1Ship.Model.Position, player1Ship.Model.Rotation);
 
             //Update the camera
             cameraPlayer1.Update();
         }
-	// Update camera for player2
+        // Update camera for player2
         void updateCameraPlayer2(GameTime gameTime)
         {
             //Move the camera
@@ -224,14 +224,14 @@ namespace CQC
                 this.Exit();
             // Toggle fullscreen when pressing F
             if (Keyboard.GetState().IsKeyDown(Keys.F))
-            {	
+            {
                 graphics.IsFullScreen = !graphics.IsFullScreen;
                 graphics.ApplyChanges();
             }
             // Update input manager for menus
             InputManager.Update();
 
-	    // Gamestate specific code
+            // Gamestate specific code
             switch (gameState)
             {
                 case GameState.MainMenu:
@@ -268,7 +268,7 @@ namespace CQC
                     // Check if a player has won and if so move to game over screen
                     if (player1Ship.Kills >= WinLimit || player2Ship.Kills >= WinLimit)
                         gameState = GameState.GameOver;
-		    // Return to main menu when either controller presses start
+                    // Return to main menu when either controller presses start
                     if (InputManager.IsTapped(Buttons.Start, PlayerIndex.One) || InputManager.IsTapped(Buttons.Start, PlayerIndex.Two))
                         gameState = GameState.MainMenu;
 
@@ -303,7 +303,7 @@ namespace CQC
             // Clear render target
             GraphicsDevice.Clear(Color.Black);
 
-	    // Gamestate specific code
+            // Gamestate specific code
             switch (gameState)
             {
                 case GameState.MainMenu:
@@ -316,13 +316,13 @@ namespace CQC
                     MainMenu.Draw(skyBox, spriteBatch, GraphicsDevice);
                     break;
 
-                case GameState.Playing
-		    // Draw plying
+                case GameState.Playing:
+                    // Draw plying
                     DrawPlaying(gameTime);
                     break;
 
                 case GameState.Paused:
-		    // Keep drawing playing
+                    // Keep drawing playing
                     DrawPlaying(gameTime);
                     break;
 
@@ -342,7 +342,7 @@ namespace CQC
             base.Draw(gameTime);
         }
 
-	// Draw everything for when playing
+        // Draw everything for when playing
         void DrawPlaying(GameTime gameTime)
         {
             // !!!!! Reset render target !!!!!
@@ -396,7 +396,7 @@ namespace CQC
             spriteBatch.Begin();
             spriteBatch.Draw(RenderTargetTop, new Rectangle(0, 0, 960, 1080), Color.White);
             spriteBatch.Draw(RenderTargetBottom, new Rectangle(960, 0, 960, 1080), Color.White);
-            
+
             spriteBatch.End();
 
             // !!!!! Reset render target !!!!!

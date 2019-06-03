@@ -11,27 +11,34 @@ namespace CQC
     {
         public List<CustomModel> Asteroids = new List<CustomModel>();
 
+        // Size of asteroid field
         private int Width = 10000;
         private int Height = 10000;
         private int Length = 10000;
-
+        // Number of asteroids to spawn
         private int numberOfAsteroids;
-
+        // Model of the asteroid
         private Model asteroidModel;
 
+        // Constructor
         public AsteroidField(Model asteroidModel, int numberOfAsteroids)
         {
+            // Update internal variables to ones supplied by constructor
             this.numberOfAsteroids = numberOfAsteroids;
             this.asteroidModel = asteroidModel;
 
-            // Generate field
+            // Spawn a predefined field
+            // Can be replaced with "GenerateNewAsteroidField()" to randomize a new field
             SpawnPreDefinedAsteroidField();
         }
 
+        // Generates a random asteroid field
         public void GenerateNewAsteroidField()
         {
+            // Create a new random
             Random rnd = new Random();
 
+            // Add as many asteroids as numberOfAsteroids is set to
             for (int i = 1; i <= numberOfAsteroids; i++)
             {
                 // Generate a random position for asteroid
@@ -41,14 +48,18 @@ namespace CQC
                     rnd.Next(-Length, Length)
                     );
 
+                // Create a custom model with the position
                 CustomModel asteroid = new CustomModel(asteroidModel, position, Vector3.One, new Vector3(300, 300, 300), new Vector3(0.1f), Vector3.Zero, null);
 
+                // Add the model to the Asteroids list
                 Asteroids.Add(asteroid);
             }
         }
 
+        // Spawn a predefined asteroid field
         private void SpawnPreDefinedAsteroidField()
         {
+            // Add each asteroid to the Asteroids list with manual coordinates
             Asteroids.Add(new CustomModel(asteroidModel, new Vector3(-150, 30, -30), Vector3.One, new Vector3(3, 3, 3), Vector3.Zero, new Vector3(0.001f, 0, 0), null));
             Asteroids.Add(new CustomModel(asteroidModel, new Vector3(50, 40, 37), Vector3.One, new Vector3(3, 3, 3), Vector3.Zero, new Vector3(0, -0.001f, 0), null));
             Asteroids.Add(new CustomModel(asteroidModel, new Vector3(126, 1, 35), Vector3.One, new Vector3(3, 3, 3), Vector3.Zero, new Vector3(0, 0.001f, 0), null));
@@ -80,18 +91,20 @@ namespace CQC
             Asteroids.Add(new CustomModel(asteroidModel, new Vector3(-20, -130, 400), Vector3.One, new Vector3(3, 3, 3), Vector3.Zero, new Vector3(0.00f, 0.00f, 0.0012f), null));
         }
 
+        // Update
         public void Update(GameTime gameTime)
         {
-            // Update each asteroid
+            // Update each asteroid in the Asteroids list
             foreach (CustomModel asteroid in Asteroids)
             {
                 asteroid.Update(gameTime);
             }
         }
 
+        // Draw
         public void Draw(Camera camera)
         {
-            // Draw each asteroid
+            // Draw each asteroid in the Asteroids list
             foreach (CustomModel asteroid in Asteroids)
             {
                 asteroid.Draw(camera.View, camera.Projection, Vector3.Zero);

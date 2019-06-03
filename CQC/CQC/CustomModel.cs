@@ -10,10 +10,14 @@ namespace CQC
         public Vector3 Rotation { get; set; }
         public Vector3 Scale { get; set; }
 
-        public Matrix RotationAsMatrix {
+        // Get rotation as a matrix
+        public Matrix RotationAsMatrix
+        {   
+            // Create matrix from rotation vector
             get { return Matrix.CreateFromYawPitchRoll(Rotation.Y, Rotation.X, Rotation.Z); }
         }
 
+        // Movement and rotation velocity 
         public Vector3 Velocity { get; set; }
         public Vector3 RotationVelocity { get; set; }
 
@@ -54,6 +58,7 @@ namespace CQC
         {
             get
             {
+                // Build and return the bounding box
                 buildBoundingBox();
                 return boundingBox;
             }
@@ -87,6 +92,7 @@ namespace CQC
             this.Rotation = Rotation;
             this.Scale = Scale;
 
+            // Update velocities
             this.Velocity = Velocity;
             this.RotationVelocity = RotationVelocity;
 
@@ -101,14 +107,17 @@ namespace CQC
             // Generate tags for the model
             generateTags();
 
+            // Set model's material to a new material
             this.Material = new Material();
         }
 
         // Create bounding sphere for the model
         private void buildBoundingSphere()
         {
+            // Create a sphere
             BoundingSphere sphere = new BoundingSphere(Vector3.Zero, 0);
 
+            // Loop thourgh each modelmesh in the model and adjust the sphere to fit the model
             foreach (ModelMesh mesh in Model.Meshes)
             {
                 BoundingSphere transformed = mesh.BoundingSphere.Transform(modelTransforms[mesh.ParentBone.Index]);
@@ -116,6 +125,7 @@ namespace CQC
                 sphere = BoundingSphere.CreateMerged(sphere, transformed);
             }
 
+            // Set the bounding sphere to the new spehre
             this.boundingSphere = sphere;
         }
 
@@ -127,11 +137,13 @@ namespace CQC
             Vector3 modelMax = new Vector3(float.MinValue, float.MinValue, float.MinValue);
             Vector3 modelMin = new Vector3(float.MaxValue, float.MaxValue, float.MaxValue);
 
+            // Loop thourgh each ModelMesh in the model
             foreach (ModelMesh mesh in Model.Meshes)
             {
                 Matrix worldTransform = Matrix.CreateScale(Scale) *
                     Matrix.CreateTranslation(Position) * Matrix.CreateTranslation(Rotation);
 
+                // Loop thourgh each ModelMeshParts in the model
                 foreach (ModelMeshPart meshPart in mesh.MeshParts)
                 {
                     // Vertex buffer parameters
@@ -145,11 +157,11 @@ namespace CQC
                     // Loops through all vertices
                     for (int i = 0; i < vertexBufferSize / sizeof(float); i += vertexStride / sizeof(float))
                     {
-                        // I'm not sure what "i + 1" and "i + 2" does by they offset the hitbox so they have been tweaked to better match the ships
+                        // I'm not sure what "i + 1" and "i + 2" does but they offset the hitbox so they have been tweaked to better match the ships
                         //Vector3 transformedPosition = Vector3.Transform(new Vector3(vertexData[i], vertexData[i + 1], vertexData[i + 2]), worldTransform);
                         Vector3 transformedPosition = Vector3.Transform(new Vector3(vertexData[i], vertexData[i + 1] -2, vertexData[i]), worldTransform);
 
-
+                        // Set the min and max values using the transformed position
                         modelMin = Vector3.Min(modelMin, transformedPosition);
                         modelMax = Vector3.Max(modelMax, transformedPosition);
                     }
@@ -160,11 +172,14 @@ namespace CQC
             this.boundingBox = new BoundingBox(modelMin, modelMax);
         }
 
+        // Funciton for setting effect parameters for the effect
         void setEffectParameter(Effect effect, string paramName, object val)
         {
+            // Do nothing if parameter is null
             if (effect.Parameters[paramName] == null)
                 return;
 
+            // Set Parameters depeniding on type of parameter supplied
             if (val is Vector3)
                 effect.Parameters[paramName].SetValue((Vector3)val);
             else if (val is bool)
@@ -175,11 +190,14 @@ namespace CQC
                 effect.Parameters[paramName].SetValue((Texture2D)val);
         }
 
+        // Set the models effect
         public void SetModelEffect(Effect effect, bool CopyEffect)
         {
+            // Loop through each ModelMeshPart in each ModelMesh of the model
             foreach (ModelMesh mesh in Model.Meshes)
                 foreach (ModelMeshPart part in mesh.MeshParts)
                 {
+                    // Effect to set on the ModelMeshPart
                     Effect toSet = effect;
 
                     // Copy the effect if necessary
@@ -188,7 +206,7 @@ namespace CQC
 
                     MeshTag tag = ((MeshTag)part.Tag);
 
-                    // If this ModelMeshPart has a texture, set it to the effect
+                    // If this MeshTag has a texture, apply it to the effect
                     if (tag.Texture != null)
                     {
                         setEffectParameter(toSet, "BasicTexture", tag.Texture);
@@ -197,24 +215,31 @@ namespace CQC
                     else
                         setEffectParameter(toSet, "TextureEnabled", false);
 
-                    // Set remaining parameters to the effect
+                    // Set remaining parameters to ones in effect
                     setEffectParameter(toSet, "DiffuseColor", tag.Color);
                     setEffectParameter(toSet, "SpecularPower", tag.SpecularPower);
 
+                    // Set the ModelMeshPart's effect to the newly created one
                     part.Effect = toSet;
                 }
         }
 
+        // Generates the model's tags
         private void generateTags()
         {
+            // Loop through each ModelMeshPart in each ModelMesh in the model
             foreach (ModelMesh mesh in Model.Meshes)
             {
                 foreach (ModelMeshPart part in mesh.MeshParts)
                 {
+                    // Check if the ModelMeshPart's effect is a BasicEffect
                     if (part.Effect is BasicEffect)
                     {
+                        // Get the effect
                         BasicEffect effect = (BasicEffect)part.Effect;
+                        // Create a new tag using the effects properties
                         MeshTag tag = new MeshTag(effect.DiffuseColor, effect.Texture, effect.SpecularPower);
+                        // Update the part's tag to the newly created one
                         part.Tag = tag;
                     }
                 }
@@ -229,7 +254,7 @@ namespace CQC
                     ((MeshTag)part.Tag).CachedEffect = part.Effect;
         }
 
-        // Restore the effects referenced by the model's cache
+        // Restore the effects referenced by the model's cache as long as the cahced effect is not null
         public void RestoreEffects()
         {
             foreach (ModelMesh mesh in Model.Meshes)
@@ -303,6 +328,7 @@ namespace CQC
         public float SpecularPower;
         public Effect CachedEffect = null;
 
+        // Constructor
         public MeshTag(Vector3 Color, Texture2D Texture, float SpecularPower)
         {
             this.Color = Color;

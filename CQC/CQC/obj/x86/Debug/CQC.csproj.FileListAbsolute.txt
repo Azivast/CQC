@@ -249,3 +249,14 @@ D:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Fonts\digital
 D:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Fonts\digitaldream3.xnb
 D:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Textures\centerMarker1.xnb
 D:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQC\bin\x86\Debug\Content\Textures\centerMarker2.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Content\Textures\controls.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Content\Textures\marker.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Content\Textures\transparentBlack.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Content\Fonts\digitaldream2.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Content\Fonts\digitaldream3.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Content\Textures\centerMarker1.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Content\Textures\centerMarker2.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Content\Sounds\shieldsoffline1.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Content\Sounds\shieldsoffline2.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Content\Sounds\shieldsonline1.xnb
+D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQC\bin\x86\Debug\Content\Sounds\shieldsonline2.xnb

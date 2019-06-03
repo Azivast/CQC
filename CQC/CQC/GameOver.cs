@@ -15,34 +15,34 @@ namespace CQC
     // Class handeling everythin in game over screen
     static class GameOver
     {
-	// Mostly self documenting variables
+        // Mostly self-documenting variables
         private static Camera camera;
 
         private static SpriteFont menuFont;
         private static Texture2D logo;
-	// Scoreboard texture
+        // Scoreboard texture
         private static Texture2D scoreboard;
-	//Bakcground texture
+        //Bakcground texture
         private static Texture2D bg;
 
-	// Load content used by GameOver
+        // Load content used by GameOver
         public static void LoadContent(ContentManager Content, GraphicsDevice graphics)
         {
             // Load camera
-            camera = new ArcBallCamera(new Vector3(0, 0, 0), 0, 0.2f, 0, MathHelper.PiOver2, 4000, 1000, 4000, graphics, 16/9f);
+            camera = new ArcBallCamera(new Vector3(0, 0, 0), 0, 0.2f, 0, MathHelper.PiOver2, 4000, 1000, 4000, graphics, 16 / 9f);
 
-	    // Load background
+            // Load background
             bg = Content.Load<Texture2D>("Textures/transparentBlack");
 
             // Load font
             menuFont = Content.Load<SpriteFont>("Fonts/digitaldream2");
-	    // Load game logo
+            // Load game logo
             logo = Content.Load<Texture2D>("Textures/logo");
-	    // Load scoreboard texture
+            // Load scoreboard texture
             scoreboard = Content.Load<Texture2D>("Textures/Scoreboard");
         }
 
-	// Update
+        // Update
         public static void Update()
         {
             // Stop controller vibration (Incase a player was firing previously)
@@ -63,7 +63,7 @@ namespace CQC
             }
         }
 
-	// Draw
+        // Draw
         public static void Draw(PlayerShip player1, PlayerShip player2, SkyBox skyBox, SpriteBatch spriteBatch)
         {
             // Draw skybox
@@ -89,8 +89,8 @@ namespace CQC
 
 
             // Draw game stats and scoreboard
-	    
-	    // Draw "titles" for each columb/row 
+
+            // Draw "titles" for each columb/row 
             spriteBatch.DrawString(menuFont, "Stats:", new Vector2(420, 420), new Color(224, 96, 26));
             spriteBatch.DrawString(menuFont, "Kills", new Vector2(580, 420), new Color(224, 96, 26));
             spriteBatch.DrawString(menuFont, "Deaths", new Vector2(740, 420), new Color(224, 96, 26));
@@ -98,7 +98,7 @@ namespace CQC
             spriteBatch.DrawString(menuFont, "Player 1", new Vector2(420, 480), new Color(224, 96, 26));
             spriteBatch.DrawString(menuFont, "Player 2", new Vector2(420, 540), new Color(224, 96, 26));
 
-	    // Draw actual stats (number of kills/deaths/etc)
+            // Draw actual stats (number of kills/deaths/etc)
             spriteBatch.DrawString(menuFont, player1.Kills.ToString(), new Vector2(610, 480), new Color(224, 96, 26));
             spriteBatch.DrawString(menuFont, player1.Deaths.ToString(), new Vector2(770, 480), new Color(224, 96, 26));
 
@@ -109,7 +109,7 @@ namespace CQC
             spriteBatch.Draw(scoreboard, new Vector2(419, 420), Color.White);
 
 
-	    // Draw return to menu text
+            // Draw return to menu text
             spriteBatch.DrawString(menuFont, "Press A to return to main menu", new Vector2(400, 660), new Color(224, 96, 26));
             spriteBatch.End();
         }

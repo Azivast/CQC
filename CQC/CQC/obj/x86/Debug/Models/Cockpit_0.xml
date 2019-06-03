@@ -3,7 +3,7 @@
   <Asset Type="Graphics:NodeContent">
     <Name>RootNode</Name>
     <Identity>
-      <SourceFilename>D:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQCContent\Models\Cockpit.fbx</SourceFilename>
+      <SourceFilename>D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQCContent\Models\Cockpit.fbx</SourceFilename>
       <SourceTool>FbxImporter</SourceTool>
     </Identity>
     <Transform>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</Transform>
@@ -105,7 +105,7 @@
     <Resource ID="#Resource1" Type="Graphics:BasicMaterialContent">
       <Name>lambert2</Name>
       <Identity>
-        <SourceFilename>D:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQCContent\Models\Cockpit.fbx</SourceFilename>
+        <SourceFilename>D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQCContent\Models\Cockpit.fbx</SourceFilename>
         <SourceTool>FbxImporter</SourceTool>
       </Identity>
       <OpaqueData>

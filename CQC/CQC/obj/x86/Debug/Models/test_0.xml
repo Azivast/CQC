@@ -3,7 +3,7 @@
   <Asset Type="Graphics:MeshContent">
     <Name>pCube1</Name>
     <Identity>
-      <SourceFilename>D:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQCContent\Models\test.fbx</SourceFilename>
+      <SourceFilename>D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQCContent\Models\test.fbx</SourceFilename>
       <SourceTool>FbxImporter</SourceTool>
     </Identity>
     <Transform>1 0 0 0 0 1 0 0 0 0 1 0 0.377377123 1.42589664 -0.988682151 1</Transform>
@@ -26,7 +26,7 @@
     <Resource ID="#Resource1" Type="Graphics:BasicMaterialContent">
       <Name>Wood</Name>
       <Identity>
-        <SourceFilename>D:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQCContent\Models\test.fbx</SourceFilename>
+        <SourceFilename>D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQCContent\Models\test.fbx</SourceFilename>
         <SourceTool>FbxImporter</SourceTool>
       </Identity>
       <OpaqueData>

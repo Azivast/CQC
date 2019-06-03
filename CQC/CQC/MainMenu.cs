@@ -15,23 +15,23 @@ namespace CQC
     // Class with everything in main menu
     static class MainMenu
     {
-	// Self documenting variables
+        // Self-documenting variables
         private static CustomModel ship;
         private static Camera camera;
         private static SpriteFont menuFont;
         private static Texture2D logo;
-	// Background
+        // Background
         private static Texture2D bg;
         private static ButtonManager buttonManager;
 
 
-	// Load all content used by main menu
+        // Load all content used by main menu
         public static void LoadContent(ContentManager Content, GraphicsDevice graphics)
         {
             // Load ship
             ship = new CustomModel(Content.Load<Model>("Models/Ship"), Vector3.Zero, Vector3.Zero, new Vector3(100f), Vector3.Zero, Vector3.Zero, graphics);
             // Apply the ship effect & material from game1 to ship.
-	    ship.SetModelEffect(Game1.SimpleEffect, true);
+            ship.SetModelEffect(Game1.SimpleEffect, true);
             ship.Material = Game1.ShipMaterial;
 
             // Load camera
@@ -53,7 +53,7 @@ namespace CQC
             buttonManager.AddButton("Exit");
 
         }
-	// Update
+        // Update
         public static void Update()
         {
             // Rotate camera
@@ -84,7 +84,7 @@ namespace CQC
                 }
             }
 
-	    // Get dpad input from controller 1 and change selected input depending on input.
+            // Get dpad input from controller 1 and change selected button depending on input.
             if (InputManager.IsTapped(Buttons.DPadUp, PlayerIndex.One))
             {
                 buttonManager.PrevButton();
@@ -94,7 +94,7 @@ namespace CQC
                 buttonManager.NextButton();
             }
 
-	    // Get left thumbstick input form controller 1 and change selected button depending on input
+            // Get left thumbstick input form controller 1 and change selected button depending on input
             if (InputManager.GamePad1.ThumbSticks.Left.Y > 0.5f && InputManager.PrevGamePad1.ThumbSticks.Left.Y < 0.5f)
             {
                 buttonManager.PrevButton();
@@ -104,7 +104,7 @@ namespace CQC
                 buttonManager.NextButton();
             }
 
-            
+
             // Check if controller 2 presses A
             if (InputManager.IsTapped(Buttons.A, PlayerIndex.Two))
             {
@@ -126,7 +126,7 @@ namespace CQC
                 }
             }
 
-	    // Get dpad input from controller 2 and change button depending on input 
+            // Get dpad input from controller 2 and change selected button depending on input 
             if (InputManager.IsTapped(Buttons.DPadUp, PlayerIndex.Two))
             {
                 buttonManager.PrevButton();
@@ -135,7 +135,7 @@ namespace CQC
             {
                 buttonManager.NextButton();
             }
-	    // Get left thumbstick input from controller 2 and change button depending on input
+            // Get left thumbstick input from controller 2 and change selected button depending on input
             if (InputManager.GamePad2.ThumbSticks.Left.Y > 0.5f && InputManager.PrevGamePad2.ThumbSticks.Left.Y < 0.5f)
             {
                 buttonManager.PrevButton();
@@ -146,7 +146,7 @@ namespace CQC
             }
         }
 
-	// Draw
+        // Draw
         public static void Draw(SkyBox skyBox, SpriteBatch spriteBatch, GraphicsDevice graphics)
         {
             // Draw skybox
@@ -161,13 +161,13 @@ namespace CQC
             // Draw logo
             spriteBatch.Draw(logo, new Rectangle(483, 20, logo.Width, logo.Height), Color.White);
 
-            // Check if player1's controller is connected and write text accordingly 
+            // Check if player1's controller is connected and draw text accordingly 
             if (GamePad.GetState(PlayerIndex.One).IsConnected)
                 spriteBatch.DrawString(menuFont, " Controller 1 Conmnected", new Vector2(450, 640), new Color(224, 96, 26));
             else
                 spriteBatch.DrawString(menuFont, "Controller 1 Disconnected", new Vector2(440, 640), new Color(224, 30, 00));
 
-            // Check if player2's controller is connected and write text accordingly 
+            // Check if player2's controller is connected and draw text accordingly 
             if (GamePad.GetState(PlayerIndex.Two).IsConnected)
                 spriteBatch.DrawString(menuFont, " Controller 2 Conmnected ", new Vector2(450, 680), new Color(224, 96, 26));
             else

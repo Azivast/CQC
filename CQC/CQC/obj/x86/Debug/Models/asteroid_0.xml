@@ -3,7 +3,7 @@
   <Asset Type="Graphics:MeshContent">
     <Name>pCube1</Name>
     <Identity>
-      <SourceFilename>D:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQCContent\Models\asteroid.fbx</SourceFilename>
+      <SourceFilename>D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQCContent\Models\asteroid.fbx</SourceFilename>
       <SourceTool>FbxImporter</SourceTool>
     </Identity>
     <OpaqueData>
@@ -29,7 +29,7 @@
     <Resource ID="#Resource1" Type="Graphics:BasicMaterialContent">
       <Name>lambert2</Name>
       <Identity>
-        <SourceFilename>D:\LBS\Årskurs 2\PRRPRR\CQC Current\CQC\CQCContent\Models\asteroid.fbx</SourceFilename>
+        <SourceFilename>D:\LBS\Årskurs 2\PRRPRR\CQC\CQC\CQCContent\Models\asteroid.fbx</SourceFilename>
         <SourceTool>FbxImporter</SourceTool>
       </Identity>
       <OpaqueData>

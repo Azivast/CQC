@@ -14,21 +14,21 @@ namespace CQC
         private CustomModel model;
         // 1st person model
         private CustomModel cockpitModel;
-	// Index of player (player number)
+        // Index of player (player number)
         private PlayerIndex playerIndex;
 
         // Crosshair texture
         private Texture2D crosshair;
         // Texture of enemy marker
         private Texture2D enemyMarker;
-	// Textures of marker indicating center or world
+        // Textures of marker indicating center or world
         private Texture2D centerMarkerForward;
         private Texture2D centerMarkerBackward;
 
-	// Bullet Manager
+        // Bullet Manager
         private BulletManager bulletManager;
 
-	// Ship velocity
+        // Ship velocity
         public Vector3 Velocity;
 
         // Position and rotatation at which ship spawns
@@ -54,15 +54,15 @@ namespace CQC
         // Timer for when to fire
         private float shootTimer = 0;
 
-	// If player has left fighting area (is out of bounds)
+        // If player has left fighting area (is out of bounds)
         public bool OutOfBounds = false;
         // Time player can spend out of bounds before dying
         private float boundsTimerMax = 20;
         // Timer left out of bounds
         private float boundsTimer;
 
-	
-	// Public Get/Sets
+
+        // Public Get/Sets
 
         // Position
         public Vector3 Position
@@ -88,7 +88,7 @@ namespace CQC
             get { return new CustomModel(cockpitModel.Model, model.Position, model.Rotation, model.Scale, model.Velocity, model.RotationVelocity, null); }
             set { cockpitModel = value; }
         }
-	
+
         public BulletManager BulletManager
         {
             get { return bulletManager; }
@@ -98,7 +98,7 @@ namespace CQC
         // Constructor
         public PlayerShip(CustomModel model, CustomModel cockpitModel, BulletManager bulletManager, Texture2D crosshair, Texture2D enemyMarker, Texture2D centerMarkerForward, Texture2D centerMarkerBackward, Vector3 spawnPosition, Vector3 spawnRotation, PlayerIndex playerIndex)
         {
-	    // Update internal variables to ones supplied by constructor
+            // Update internal variables to ones supplied by constructor
             this.playerIndex = playerIndex;
             this.model = model;
             this.cockpitModel = cockpitModel;
@@ -128,7 +128,7 @@ namespace CQC
             boundsTimer = boundsTimerMax;
         }
 
-	// Reset ship
+        // Reset ship
         public void Reset()
         {
             // Stop ship
@@ -154,7 +154,7 @@ namespace CQC
             Kills = 0;
         }
 
-	// Destroy and respawn ship
+        // Destroy and respawn ship
         public void DestroyShip()
         {
             // Play explosion sound
@@ -179,12 +179,12 @@ namespace CQC
             Deaths++;
         }
 
-	// Invert velocity and damage ship if moving too fast
+        // Invert velocity and damage ship if moving too fast
         public void SendOffCourse()
         {
-	    // If velocity is faster than 0.1, damage ship
+            // If velocity is faster than 0.1, damage ship
             if (Velocity.Length() > 0.1)
-	    {
+            {
                 DamageShip();
             }
 
@@ -195,7 +195,7 @@ namespace CQC
             Velocity *= -0.3f;
         }
 
-	// Invert ship's velocity and damage ship
+        // Invert ship's velocity and damage ship
         public void SendOffCourseAndDamage()
         {
             DamageShip();
@@ -216,7 +216,7 @@ namespace CQC
             // If shields are online
             if (Shields > 0)
             {
-		// Damage shields
+                // Damage shields
                 Shields--;
                 // Play shield it sound
                 SoundManager.ShieldHit.Play();
@@ -244,7 +244,7 @@ namespace CQC
             // If shields are offline
             else if (Shields <= 0)
             {
-		// Decreas health
+                // Decreas health
                 Health--;
                 // Play hit sound
                 SoundManager.Hit.Play();
@@ -254,15 +254,15 @@ namespace CQC
             // If health and shields are gone
             if (Health <= 0 && Shields <= 0)
             {
-		// Destroy ship and return that ship has been destroyed
+                // Destroy ship and return that ship has been destroyed
                 DestroyShip();
                 return true;
             }
-	    // Otherwise return that ship was not destroyed
+            // Otherwise return that ship was not destroyed
             return false;
         }
 
-	// Handle Rotation
+        // Handle Rotation
         private void doRotation(GameTime gameTime, GamePadState gamePadState)
         {
             // Vector3 of Yaw/pitch/roll from controller
@@ -279,15 +279,15 @@ namespace CQC
             rotationInput *= .025f;
 
             //model.Rotation = MatrixHelper.ExtractYawPitchRoll(finalMatrix);
-	    
-	    // Rotate model
+
+            // Rotate model
             model.Rotation += rotationInput;
 
             // Keep player from rotating ship far enough to invert controls
             model.Rotation = new Vector3(MathHelper.Clamp(model.Rotation.X, -1.7f, 1.7f), model.Rotation.Y, model.Rotation.Z);
         }
 
-	// Handle movement
+        // Handle movement
         private void doMovement(GameTime gameTime, GamePadState gamePadState)
         {
             // Reset movement
@@ -312,14 +312,14 @@ namespace CQC
             // Limit velocity if velocity is higher than allowed
             if (Velocity.Length() > maxVelocity)
             {
-		// Set velocity to max velocty
+                // Set velocity to max velocty
                 Velocity = Vector3.Normalize(Velocity) * maxVelocity;
             }
 
             // Brake when pressing X
             if (gamePadState.IsButtonDown(Buttons.X))
             {
-		// Decrease velocity by 3%
+                // Decrease velocity by 3%
                 Velocity = Velocity * 0.97f;
             }
 
@@ -332,7 +332,7 @@ namespace CQC
         // Update
         public void Update(GameTime gameTime)
         {
-	    // Get gamepad state
+            // Get gamepad state
             GamePadState gamePadState = GamePad.GetState(playerIndex);
 
             // Fire when pressing Right tumbstick
@@ -340,11 +340,11 @@ namespace CQC
             {
                 // Count up time since last shot
                 shootTimer += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
-		
-		// Shoot when enough time has passed
+
+                // Shoot when enough time has passed
                 if (shootTimer >= 200)
                 {
-		    // Shoot
+                    // Shoot
                     bulletManager.Shoot(model, Velocity);
                     // Vibrate controller
                     GamePad.SetVibration(playerIndex, 10, 0);
@@ -364,13 +364,13 @@ namespace CQC
             // Regen shields if enough time has passed since last hit
             if (Shields < MaxShields && timeSinceLastHit > 15)
             {
-		// Regen by small amont
+                // Regen by small amont
                 Shields += 0.01f;
 
-		// If shields are higher than 0% but set to be offline
+                // If shields are higher than 0% but set to be offline
                 if (Shields > 0 && !shieldsOnline)
                 {
-		    // Bring shields online
+                    // Bring shields online
                     shieldsOnline = true;
                     // Play sound based on player index
                     if (playerIndex == PlayerIndex.One)
@@ -393,7 +393,7 @@ namespace CQC
             // Count time spent outside arena when outside arena
             if (OutOfBounds)
             {
-		// Count in seconds
+                // Count in seconds
                 boundsTimer -= (float)gameTime.ElapsedGameTime.TotalSeconds;
 
                 // Check if player has been out of bound long enough to die
@@ -410,25 +410,26 @@ namespace CQC
 
         }
 
-	// Draw stuff seen in first person
+        // Draw stuff seen in first person
         public void DrawFirstPerson(Camera camera, SpriteBatch spriteBatch, GraphicsDevice graphics, CustomModel enemyModel)
         {
             // Disable the depth buffer
             graphics.DepthStencilState = DepthStencilState.None;
 
-	    // Draw cockpit model
+            // Draw cockpit model
             CockpitModel.Draw(camera.View, camera.Projection, Vector3.Zero);
 
             // Draw everything in HUD
             spriteBatch.Begin();
-            spriteBatch.DrawString(Game1.HudFont, "shields: " + ((int)((Shields / MaxShields)*100)).ToString() + "%", new Vector2(120, 840), new Color(224, 96, 26));
+            spriteBatch.DrawString(Game1.HudFont, "shields: " + ((int)((Shields / MaxShields) * 100)).ToString() + "%", new Vector2(120, 840), new Color(224, 96, 26));
             spriteBatch.DrawString(Game1.HudFont, "speed: " + ((int)((Velocity.Length()) * 100)).ToString(), new Vector2(430, 840), new Color(224, 96, 26));
             spriteBatch.DrawString(Game1.HudFont, "hull: " + ((int)((Health / MaxHealth) * 100)).ToString() + "%", new Vector2(700, 840), new Color(224, 96, 26));
 
             spriteBatch.DrawString(Game1.HudFont, "kills: " + Kills.ToString(), new Vector2(140, 170), new Color(224, 96, 26));
             spriteBatch.DrawString(Game1.HudFont, "deaths: " + Deaths.ToString(), new Vector2(700, 170), new Color(224, 96, 26));
 
-            Vector2 crosshairPos = new Vector2(480 - (crosshair.Width/2), 540 - (crosshair.Height/2));
+            // Calculate crosshair position
+            Vector2 crosshairPos = new Vector2(480 - (crosshair.Width / 2), 540 - (crosshair.Height / 2));
 
             // If player is pitching too far up/down notify using HUD
             if (model.Rotation.X > 1)
@@ -444,10 +445,10 @@ namespace CQC
 
             // Calculate position to draw enemy marker at
             Vector2 enemyMarkerPos = new Vector2(
-                graphics.Viewport.Project(Vector3.Zero, camera.Projection, camera.View, enemyModel.WorldMatrix).X - (enemyMarker.Width/2), 
+                graphics.Viewport.Project(Vector3.Zero, camera.Projection, camera.View, enemyModel.WorldMatrix).X - (enemyMarker.Width / 2),
                 graphics.Viewport.Project(Vector3.Zero, camera.Projection, camera.View, enemyModel.WorldMatrix).Y - (enemyMarker.Height / 2));
             // Clamp marker pos to keep it from going outside the screen
-            enemyMarkerPos = Vector2.Clamp(enemyMarkerPos, Vector2.Zero, new Vector2(920-enemyMarker.Width, 1080-enemyMarker.Height));
+            enemyMarkerPos = Vector2.Clamp(enemyMarkerPos, Vector2.Zero, new Vector2(920 - enemyMarker.Width, 1080 - enemyMarker.Height));
             // Only draw marker when enemy is not behind player
             if (graphics.Viewport.Project(Vector3.Zero, camera.Projection, camera.View, enemyModel.WorldMatrix).Z < 1)
                 spriteBatch.Draw(enemyMarker, enemyMarkerPos, new Color(224, 30, 00));
@@ -457,7 +458,7 @@ namespace CQC
                 graphics.Viewport.Project(Vector3.Zero, camera.Projection, camera.View, Matrix.CreateWorld(Vector3.Zero, Vector3.Forward, Vector3.Up)).X - (centerMarkerForward.Width / 2),
                 graphics.Viewport.Project(Vector3.Zero, camera.Projection, camera.View, Matrix.CreateWorld(Vector3.Zero, Vector3.Forward, Vector3.Up)).Y - (centerMarkerForward.Height / 2));
             // Clamp marker pos to keep it from going outside the screen
-            centerPos = Vector2.Clamp(centerPos, Vector2.Zero, new Vector2(920-centerMarkerForward.Width, 1080-centerMarkerForward.Height));
+            centerPos = Vector2.Clamp(centerPos, Vector2.Zero, new Vector2(920 - centerMarkerForward.Width, 1080 - centerMarkerForward.Height));
             // Only draw marker with texture based on if marker is behind player or not
             if (graphics.Viewport.Project(Vector3.Zero, camera.Projection, camera.View, enemyModel.WorldMatrix).Z < 1)
                 spriteBatch.Draw(centerMarkerForward, centerPos, new Color(216, 180, 19));
@@ -472,10 +473,10 @@ namespace CQC
             graphics.DepthStencilState = DepthStencilState.Default;
         }
 
-	// Draw stuff seen in thrid person
+        // Draw stuff seen in thrid person
         public void DrawThirdPerson(Camera camera)
         {
-	    // Draw ship
+            // Draw ship
             model.Draw(camera.View, camera.Projection, Vector3.Zero);
         }
     }

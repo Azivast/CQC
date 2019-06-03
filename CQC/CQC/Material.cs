@@ -9,7 +9,7 @@ namespace CQC
 {
     public class Material
     {
-	// No use unless changed through inheritance
+        // No use unless changed through inheritance
         public virtual void SetEffectParameters(Effect effect)
         {
 
@@ -19,16 +19,16 @@ namespace CQC
     // LightningMaterial inherits everything from Material 
     public class LightningMaterial : Material
     {
-	// Lightning variables
+        // Lightning variables
         public Vector3 AmbientColor { get; set; }
         public Vector3 LightDirection { get; set; }
         public Vector3 LightColor { get; set; }
         public Vector3 SpecularColor { get; set; }
 
-	// Constructor
+        // Constructor
         public LightningMaterial()
         {
-	    // Give lightning materials some values. Change as you see fit
+            // Give lightning materials some values. Change as you see fit
             AmbientColor = new Vector3(.1f, .1f, .1f);
             LightDirection = new Vector3(1, 1, 1);
             LightColor = new Vector3(.9f, .9f, .9f);
