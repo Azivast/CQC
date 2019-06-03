@@ -12,23 +12,26 @@ using Microsoft.Xna.Framework.Media;
 
 namespace CQC
 {
+    // Class with everything in main menu
     static class MainMenu
     {
+	// Self documenting variables
         private static CustomModel ship;
         private static Camera camera;
-
         private static SpriteFont menuFont;
         private static Texture2D logo;
+	// Background
         private static Texture2D bg;
-
         private static ButtonManager buttonManager;
 
 
+	// Load all content used by main menu
         public static void LoadContent(ContentManager Content, GraphicsDevice graphics)
         {
-            // Load ship and specify lighting
+            // Load ship
             ship = new CustomModel(Content.Load<Model>("Models/Ship"), Vector3.Zero, Vector3.Zero, new Vector3(100f), Vector3.Zero, Vector3.Zero, graphics);
-            ship.SetModelEffect(Game1.SimpleEffect, true);
+            // Apply the ship effect & material from game1 to ship.
+	    ship.SetModelEffect(Game1.SimpleEffect, true);
             ship.Material = Game1.ShipMaterial;
 
             // Load camera
@@ -50,6 +53,7 @@ namespace CQC
             buttonManager.AddButton("Exit");
 
         }
+	// Update
         public static void Update()
         {
             // Rotate camera
@@ -59,11 +63,10 @@ namespace CQC
             // Update the camera
             camera.Update();
 
-            // Check controller input 1
+            // Check if controller 1 presses A
             if (InputManager.IsTapped(Buttons.A, PlayerIndex.One))
             {
-                // Check which button is selected
-
+                // Change gamestate depending on  which button is selected
                 switch (buttonManager.SelectedButton)
                 {
                     case 0:
@@ -80,6 +83,8 @@ namespace CQC
                         break;
                 }
             }
+
+	    // Get dpad input from controller 1 and change selected input depending on input.
             if (InputManager.IsTapped(Buttons.DPadUp, PlayerIndex.One))
             {
                 buttonManager.PrevButton();
@@ -89,6 +94,7 @@ namespace CQC
                 buttonManager.NextButton();
             }
 
+	    // Get left thumbstick input form controller 1 and change selected button depending on input
             if (InputManager.GamePad1.ThumbSticks.Left.Y > 0.5f && InputManager.PrevGamePad1.ThumbSticks.Left.Y < 0.5f)
             {
                 buttonManager.PrevButton();
@@ -99,11 +105,10 @@ namespace CQC
             }
 
             
-            // Check controller input 2
+            // Check if controller 2 presses A
             if (InputManager.IsTapped(Buttons.A, PlayerIndex.Two))
             {
-                // Check which button is selected
-
+                // Change gamestate depending on which button is selected
                 switch (buttonManager.SelectedButton)
                 {
                     case 0:
@@ -120,6 +125,8 @@ namespace CQC
                         break;
                 }
             }
+
+	    // Get dpad input from controller 2 and change button depending on input 
             if (InputManager.IsTapped(Buttons.DPadUp, PlayerIndex.Two))
             {
                 buttonManager.PrevButton();
@@ -128,7 +135,7 @@ namespace CQC
             {
                 buttonManager.NextButton();
             }
-
+	    // Get left thumbstick input from controller 2 and change button depending on input
             if (InputManager.GamePad2.ThumbSticks.Left.Y > 0.5f && InputManager.PrevGamePad2.ThumbSticks.Left.Y < 0.5f)
             {
                 buttonManager.PrevButton();
@@ -138,12 +145,14 @@ namespace CQC
                 buttonManager.NextButton();
             }
         }
+
+	// Draw
         public static void Draw(SkyBox skyBox, SpriteBatch spriteBatch, GraphicsDevice graphics)
         {
             // Draw skybox
             skyBox.Draw(camera.View, camera.Projection, ((ArcBallCamera)camera).Position);
 
-            // Draw menu items
+            // Start SpriteBatch to draw 2D components
             spriteBatch.Begin();
 
             // Draw transparent background

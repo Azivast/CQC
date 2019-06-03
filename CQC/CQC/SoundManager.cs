@@ -10,7 +10,7 @@ namespace CQC
 {
     static class SoundManager
     {
-        // Generic sounds
+        // Generic sounds used by both players
         public static SoundEffect Shoot;
         public static SoundEffect Hit;
         public static SoundEffect ShieldHit;
@@ -27,15 +27,14 @@ namespace CQC
         public static SoundEffect TakingDamage2;
 
 
-        // Load all tiles for level
+        // Load all content used by SoundManager
         public static void LoadContent(ContentManager Content)
         {
-            // Load sound effects
+            // Load all sound effects
             Shoot = Content.Load<SoundEffect>(@"Sounds/Shoot");
             Hit = Content.Load<SoundEffect>(@"Sounds/Hit");
             ShieldHit = Content.Load<SoundEffect>(@"Sounds/ShieldHit");
             Explosion = Content.Load<SoundEffect>(@"Sounds/Explosion");
-
             ShieldsOffline1 = Content.Load<SoundEffect>(@"Sounds/shieldsoffline1");
             ShieldsOnline1 = Content.Load<SoundEffect>(@"Sounds/shieldsonline1");
             ShieldsOffline2 = Content.Load<SoundEffect>(@"Sounds/shieldsoffline2");
@@ -45,12 +44,16 @@ namespace CQC
             // Lower sound to something that doesn't blow out your ear drums
             SoundEffect.MasterVolume = 0.5f;
         }
+
+	// Run to turn sound on/off
         public static void ToggleSound()
-        {
-            if (SoundEffect.MasterVolume == 1f)
+        {	
+	    // If sound is on set volume to 0
+            if (SoundEffect.MasterVolume == 0.5f)
                 SoundEffect.MasterVolume = 0;
+	    // If sound is off turn volume back on
             else
-                SoundEffect.MasterVolume = 1;
+                SoundEffect.MasterVolume = 0.5f;
         }
     }
 }

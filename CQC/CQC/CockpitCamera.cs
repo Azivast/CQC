@@ -11,7 +11,7 @@ namespace CQC
     {
         public Vector3 Position { get; private set; }
         public Vector3 Target { get; private set; }
-
+	
         public Vector3 FollowTargetPosition { get; private set; }
         public Vector3 FollowTargetRotation { get; private set; }
 
@@ -22,13 +22,16 @@ namespace CQC
 
         // How stiffly the camera position should follow the target position
         float springiness = 0.99f;
-
+	
+	// Change springiness (see above)
         public float Springiness
-        {
+        	{
             get { return springiness; }
+	    // Keep value between 0 and 1
             set { springiness = MathHelper.Clamp(value, 0, 1); }
         }
 
+	//Constructor
         public CockpitCamera(Vector3 PositionOffset, Vector3 TargetOffset, Vector3 RelativeCameraRotation, GraphicsDevice graphicsDevice, float AspectRatio) : base(graphicsDevice, AspectRatio)
         {
             this.PositionOffset = PositionOffset;

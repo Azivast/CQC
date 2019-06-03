@@ -11,18 +11,21 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 
 namespace CQC
-{
+{	
+    // Class handeling everything used by tutorial
     static class Tutorial
     {
-        private static Camera camera;
+	// Self documenting variables used by class	
 
+        private static Camera camera;
         private static SpriteFont menuFont;
-        private static Texture2D scoreboard;
+	// Textures
         private static Texture2D controller;
         private static Texture2D bg;
 
         private static ButtonManager buttonManager;
 
+	// Load content used by tutorial menu
         public static void LoadContent(ContentManager Content, GraphicsDevice graphics)
         {
             // Load camera
@@ -31,16 +34,18 @@ namespace CQC
             // Load font
             menuFont = Content.Load<SpriteFont>("Fonts/digitaldream2");
 
-            // load textures
-            scoreboard = Content.Load<Texture2D>("Textures/Scoreboard");
+            // Load image of controller
             controller = Content.Load<Texture2D>("Textures/controls");
+	    // Load transparent background texture
             bg = Content.Load<Texture2D>("Textures/transparentBlack");
 
             // Set up buttonManager
             buttonManager = new ButtonManager(new Vector2(640, 660), menuFont);
-            // Add buttons
+            // Add button
             buttonManager.AddButton("press A to return to main menu");
         }
+
+	// Update
         public static void Update()
         {
             // Rotate camera
@@ -51,19 +56,21 @@ namespace CQC
             camera.Update();
 
 
-            // Check controller input 1
+            // Return to main menu if controller 1 presses A
             if (InputManager.IsTapped(Buttons.A, PlayerIndex.One))
             {
                 Game1.gameState = Game1.GameState.MainMenu;
             }
 
 
-            // Check controller input 2
+            // Return to main menu if controller 2 presses A
             if (InputManager.IsTapped(Buttons.A, PlayerIndex.Two))
             {
                 Game1.gameState = Game1.GameState.MainMenu;
             }
         }
+
+	// Draw
         public static void Draw(PlayerShip player1, PlayerShip player2, SkyBox skyBox, SpriteBatch spriteBatch)
         {
             // Draw skybox
@@ -76,9 +83,10 @@ namespace CQC
             // Draw transparent background
             spriteBatch.Draw(bg, new Rectangle(0, 0, 1920, 1080), Color.White);
 
-            // Draw controller
+            // Draw controller texture
             spriteBatch.Draw(controller, new Rectangle(344, 50, controller.Width, controller.Height), Color.White);
 
+	    // Draw text explaining the game player
             spriteBatch.DrawString(menuFont, "Watch your shields and don't let your hull reach 0%", new Vector2(260, 450), new Color(224, 96, 26));
 
             spriteBatch.DrawString(menuFont, "Avoid collisions", new Vector2(510, 490), new Color(224, 96, 26));
@@ -87,7 +95,7 @@ namespace CQC
 
             spriteBatch.DrawString(menuFont, "Press F To toggle fullscreen", new Vector2(420, 570), new Color(224, 96, 26));
 
-            // controller scheme
+            // Draw what each button on the controller texture does
             spriteBatch.DrawString(menuFont, "Thrust/Strafe", new Vector2(120, 167), new Color(224, 96, 26));
 
             spriteBatch.DrawString(menuFont, "Ascend", new Vector2(235, 95), new Color(224, 96, 26));
